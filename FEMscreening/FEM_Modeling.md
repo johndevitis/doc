@@ -18,7 +18,7 @@ Rocker bearings are steel sections that have a curved bottom flange, allowing th
 
 A rigid link can accommodate these requirements if a rigid link for a single plane is used.
 
-![Rigid Link in Single Plane](Images/RockerLink.png)
+![Rigid Link in Single Plane](FEMscreening/Images/RockerLink.png)
 
 The plane selected should be normal to the direction the supported components (e.g. If the girders run longitudinally along the Z-axis, the XY plane should be selected for the rigid link). The link will act like an infinitely rigid beam for any differential movement between the components in the selected plane, but will allow longitudinal translation.
 
