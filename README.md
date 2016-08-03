@@ -6,6 +6,6 @@ This is a repository for St-Id documents.
 
 [FEM Modeling](https://johndevitis.github.io/doc/FEMscreening/FEM_Modeling.pdf)
 
-[Model Screening](johndevitis.github.io/doc/FEMscreening/ModelScreening.pdf)
+[Model Screening](https://johndevitis.github.io/doc/FEMscreening/ModelScreening.pdf)
 
-[I76 Screening](johndevitis.github.com/doc/I76Screening/ModelChanges.pdf)
+[I76 Screening](https://johndevitis.github.com/doc/I76Screening/ModelChanges.pdf)
