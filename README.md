@@ -4,6 +4,14 @@ This is a repository for St-Id documents.
 
 # Contents
 
-[FEM Modeling](FEMscreening/FEM_Modeling.pdf)
+## HTML
 
-[Model Screening](FEMscreening/ModelScreening.md)
+[FEM Modeling](johndevitis.github.io/doc/FEM_Modeling.html)
+
+[Model Screening](johndevitis.github.io/doc/FEM_Modeling.html)
+
+## PDF
+
+[FEM Modeling](johndevitis.github.io/doc/FEM_Modeling.pdf)
+
+[Model Screening](johndevitis.github.io/doc/FEM_Modeling.pdf)

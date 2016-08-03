@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<h1 id="model-changes">Model Changes</h1>
+<h2 id="swap-rocker-bearing-locations">Swap Rocker Bearing Locations</h2>
+<p>The rocker bearings are on the other 4 girders.</p>
+<div class="figure">
+<img src="Images/CenterPierLinks.png" alt="Center Pier Links" />
+<p class="caption">Center Pier Links</p>
+</div>
+<h2 id="model-rocker-bearings-with-xy-rigid-links">Model Rocker Bearings with XY Rigid Links</h2>
+<p>The pinned bearings used, release all rotational degrees of freedom. This is not a realistic representation of the true behavior of a rocker bearing. A rigid link in the XY plane will more properly release longitudinal translation. Furthermore, these new links should only extend from the bottom of the I-girder to the top of the box-girder. New nodes with rigid links to the component center nodes may need to be created to accomplish this.</p>
+<div class="figure">
+<img src="Images/RockerLink.png" alt="Rocker Link" />
+<p class="caption">Rocker Link</p>
+</div>
+<h2 id="model-elastomeric-bearings-differently">Model Elastomeric Bearings Differently</h2>
+<p>New nodes will need to be created at the bottom of the I-section girder (there appears to be a node already at the top of the box girder).</p>
+<div class="figure">
+<img src="Images/BearingLocation.png" alt="Bearing Locations" />
+<p class="caption">Bearing Locations</p>
+</div>
+<p>Existing node stiffness should be removed. This method of simulating a flexible connection between components is incorrect.</p>
+<div class="figure">
+<img src="Images/NodeStiffness.png" alt="Node Stiffness" />
+<p class="caption">Node Stiffness</p>
+</div>
+<p>Rigid links will have to be modified such that they go from the center of the I-section girder to the bottom node, and the center of the box girder to the top node. The two nodes (girder bottom and box-girder top) will be connected with a pinned link and a spring-damper element.</p>
+<div class="figure">
+<img src="Images/SpringElement.png" alt="Spring-damper element" />
+<p class="caption">Spring-damper element</p>
+</div>
+<p>The same process should be completed on the elastomeric bearings between the pier columns and the box-girder.</p>
+</body>
+</html>
