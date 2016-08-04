@@ -3,11 +3,11 @@
 Some of the first steps to error screening involve carefully looking at the geometry to make sure it is consistent with drawings or whatever information source is being used. Once the creator is reasonably confident in the model, they can begin to use other tools and techniques.
 The first of these are the geometry tools provided by Strand7. The following buttons allow the user to identify any lapses in connectivity between elements.
 
-![Free Ends and Edges](/Images/Buttons.png)
+![Free Ends and Edges](Images/Buttons.png)
 
 The bottom seven buttons will highlight free ends of elements. The image below shows the result of displaying plate free edges:
 
-![Plate Free Edges](/Images/PlateFreeEdges.png)
+![Plate Free Edges](Images/PlateFreeEdges.png)
 
 Only the edges of the deck are free, as indicated by the yellow outline. If edges were highlighted in the interior of the deck, this would indicated there is a geometry mismatch that should be rectified. A similar process can be performed on links, beam elements, and brick elements.
 

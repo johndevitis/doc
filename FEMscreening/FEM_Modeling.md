@@ -9,7 +9,7 @@ Elastomeric bearings are composed of vulcanized rubber, often compositely layere
 2. Connect nodes with Spring-Damper beam element. Apply proper stiffness to the lateral torsion. If the material stiffness is unknown, sensitivity studies should be performed to understand and bound the possible stiffness values. Axial and torsional stiffness may be specified if known. However, most often it is appropriate to leave the torsional stiffness at zero. The axial stiffness may be set to an infinitely high value (such that the structure experiences no axial deformation of the elastomeric bearing). Alternatively the axial stiffness may be set to zero, and instead utilize a link to provide vertical rigidity.
 3. Connect nodes with a pinned link if the axial stiffness of the spring-damper elements is set to zero. This link will release rotational degrees of freedom between the nodes, but provide infinite vertical stiffness.
 
-![Spring-damper element](/Images/SpringElement.png)
+![Spring-damper element](Images/SpringElement.png)
 
 Using these methods, the modeled bearing can move laterally in both directions with resistance as specified by the lateral stiffness of the spring-damper element. It will not experience any vertical deformation.
 
@@ -18,7 +18,7 @@ Rocker bearings are steel sections that have a curved bottom flange, allowing th
 
 A rigid link can accommodate these requirements if a rigid link for a single plane is used.
 
-![Rigid Link in Single Plane](/Images/RockerLink.png)
+![Rigid Link in Single Plane](Images/RockerLink.png)
 
 The plane selected should be normal to the direction the supported components (e.g. If the girders run longitudinally along the Z-axis, the XY plane should be selected for the rigid link). The link will act like an infinitely rigid beam for any differential movement between the components in the selected plane, but will allow longitudinal translation.
 
